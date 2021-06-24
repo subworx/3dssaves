@@ -2,9 +2,9 @@
 My saved games for 3DS - unlocks, finished games, 100%.
 
 For use with e.g. [JKSM](https://github.com/J-D-K/JKSM/releases):
-- Download folder for the game you want (if region doesn't match, try anyway. Most should work anyways)
-- Place folder into sdcard:/JKSV/Saves/<Game Name>
-- If the table lists ExtData for a game, repeat with sdcard:/JKSV/ExtData/<Game Name>
+- Download folder for the game you want (if region doesn't match, try anyway. Most should still work)
+- Place folder into `sdcard:/JKSV/Saves/<Game Name>`
+- If the table lists ExtData for a game, repeat with `sdcard:/JKSV/ExtData/<Game Name>`
  - Start JKSM and restore the save and, if applicable, ExtData.
 
 Structure:
