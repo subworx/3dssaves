@@ -23,7 +23,7 @@ Game Name | TitleID | Region | ExtData | Status
 [Ace Attorney Trilogy](../main/Saves/0004000000138F00/Ace%20Attorney%20Trilogy/) (Phoenix Wright)|0004000000138F00|USA|No|100%
 [Azure Striker Gunvolt](../main/Saves/000400000014C800/AZURE%20STRIKER%20GUNVOLT/)|000400000014C800|USA|No|Game beaten
 [Azure Striker Gunvolt 2](../main/Saves/0004000000196A00/AZURE%20STRIKER%20GUNVOLT%202/)|0004000000196A00|USA|No|Game beaten
-[Bravely Default](../main/Saves/00040000000FC500/BRAVELY%20DEFAULT/|00040000000FC500|USA|No|0% with DLC costumes unlocked
+[Bravely Default](../main/Saves/00040000000FC500/BRAVELY%20DEFAULT/)|00040000000FC500|USA|No|0% with DLC costumes unlocked
 [Legend of Zelda: A Link Between Worlds](../main/Saves/00040000000EC300/The%20Legend%20of%20Zelda/)|00040000000EC300|USA|No|Game beaten, [Note 1](#note1)
 [Mario & Luigi: Bowser's Inside Story + Bowser Jr.’s Journey](../main/Saves/00040000001D1400/Mario%20&%20Luigi%20%20Bowser's%20Inside…/)|00040000001D1400|USA|No|Game Beaten, [Note 2](#note2)
 [Mario & Luigi: Paper Jam](../main/Saves/0004000000132700/Mario%20&%20Luigi%20%20Paper…/)|0004000000132700|USA|No|Game beaten, [Note 2](#note2)
