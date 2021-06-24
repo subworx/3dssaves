@@ -1,13 +1,7 @@
 # 3DS Saves
 My saved games for 3DS - unlocks, finished games, 100%.
 
-For use with e.g. [JKSM](https://github.com/J-D-K/JKSM/releases):
-- Download folder for the game you want (if region doesn't match, try anyway. Most should still work)
-- Place folder into `sdcard:/JKSV/Saves/<Game Name>`
-- If the table lists ExtData for a game, repeat with `sdcard:/JKSV/ExtData/<Game Name>`
- - Start JKSM and restore the save and, if applicable, ExtData.
-
-Structure:
+## Structure:
 ```
 - Saves
   |- <TitleID>
@@ -15,6 +9,21 @@ Structure:
   |     \- <Named directory containing save data>
 ```
 
+## Usage
+For use with [JKSM](https://github.com/J-D-K/JKSM/releases):
+- Backup the game in question once to make things easier
+- Download the save game directory (e.g. `complete`) for the game you want (if region doesn't match, try anyway. Most should still work)
+- Copy the downloaded directory into `sdcard:/JKSV/Saves/<Game Name>/`, so it looks like e.g. `sdcard:/JKSV/Saves/SUPER MARIO 3D LAND/complete/` - [Note 1](#note1)
+- If the table lists ExtData for the game, repeat the steps with `sdcard:/JKSV/ExtData/`
+ - Start JKSM and restore the save and, if applicable, ExtData
+
+For use with [Checkpoint](https://github.com/FlagBrew/Checkpoint/releases):
+- Start Checkpoint once to initialize all directories
+- Download the save game directory (e.g. `complete`) for the game you want (if region doesn't match, try anyway. Most should still work)
+- Find the Checkpoint save game directory: open `sdcard:/3ds/Checkpoint/saves/`, look for `0x<digits 10-14 of Title ID> <Game Name>`, e.g. `0x0053F Super Mario 3D Land`
+- Copy the downloaded directory into `sdcard:/3ds/Checkpoint/saves/<Game directory>/`, so it looks like e.g. `sdcard:/3ds/Checkpoint/saves/0x0053F SUPER MARIO 3D LAND/complete/` 
+- If the table lists ExtData for the game, download and copy to `sdcard:/3ds/Checkpoint/extdata/<Game directory>/`
+- Start Checkpoint and restore the save and, if applicable, ExtData
 
 # Saves
 
@@ -39,6 +48,6 @@ Game Name | TitleID | Region | ExtData | Status
 
  
 ## Notes
- <a name="note1"></a>Note 1: Folder name collision: JKSM stores "The Legend of Zelda<b>&trade;</b>" (Zelda I) as "The Legend of Zelda" to lose the symbol. "The Legend of Zelda: A Link Between Worlds" is saved as "The Legend of Zelda" as well. Be wary which TitleID you restore.
+ <a name="note1"></a>Note 1: Directory name collision: JKSM stores "The Legend of Zelda<b>&trade;</b>" (Zelda I) as "The Legend of Zelda" to lose the symbol. "The Legend of Zelda: A Link Between Worlds" is saved as "The Legend of Zelda" as well. Be wary which TitleID you restore. Checkpoint is not affected due to different directory naming
  
-<a name="note2"></a>Note 2: Folders ending with `…` do NOT end with three dots, but actually with the character `…`. Use this when naming the folders or JKSM will NOT find the backup.
+<a name="note2"></a>Note 2: Directories ending with `…` do NOT end with three dots, but actually with the character `…`. Use this when naming the directories or JKSM will NOT find the backup.
